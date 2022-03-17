@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="start">Start Quiz!</div>
+        <p id="title"> A Very Hard Maybe Immpossible Quiz</p>
+          <p id="name">By: Donaven</p>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qNum"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="timeBarEmpty"></div>
+                <div id="timeBar"></div>
+            </div>
+           <div id="progress"></div> 
+        </div>
+        <div id="quizEnd" style="display: none"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
